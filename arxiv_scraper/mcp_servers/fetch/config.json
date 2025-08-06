@@ -1,0 +1,16 @@
+{
+  "name": "fetch-mcp-server",
+  "repository": "https://github.com/modelcontextprotocol/servers", 
+  "port": 3004,
+  "tools": [
+    "fetch_url",
+    "fetch_content",
+    "convert_to_markdown"
+  ],
+  "configuration": {
+    "timeout": 60,
+    "format": "markdown",
+    "follow_redirects": true,
+    "max_redirects": 5
+  }
+}

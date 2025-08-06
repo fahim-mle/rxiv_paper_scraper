@@ -1,0 +1,16 @@
+{
+  "name": "piloty-mcp-server",
+  "repository": "https://github.com/pilotymcp/piloty",
+  "port": 3006,
+  "tools": [
+    "run_command",
+    "schedule_task",
+    "monitor_process"
+  ],
+  "configuration": {
+    "ssh_enabled": true,
+    "cron_support": true,
+    "process_monitoring": true,
+    "max_parallel_processes": 4
+  }
+}

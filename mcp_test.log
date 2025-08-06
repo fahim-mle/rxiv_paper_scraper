@@ -1,0 +1,112 @@
+2025-08-07 08:53:04,857 - __main__ - INFO - Starting arXiv Scraper MCP Integration Tests
+2025-08-07 08:53:04,857 - __main__ - INFO - ================================================================================
+2025-08-07 08:53:04,858 - __main__ - INFO - Starting MCP server connection tests...
+2025-08-07 08:53:04,858 - __main__ - INFO - Testing connection to arxiv MCP server...
+2025-08-07 08:53:04,858 - __main__ - ERROR - ✗ arxiv server error: No module named 'aiohttp'
+2025-08-07 08:53:04,858 - __main__ - INFO - Testing connection to playwright MCP server...
+2025-08-07 08:53:04,858 - __main__ - ERROR - ✗ playwright server error: No module named 'aiohttp'
+2025-08-07 08:53:04,858 - __main__ - INFO - Testing connection to unstructured MCP server...
+2025-08-07 08:53:04,858 - __main__ - ERROR - ✗ unstructured server error: No module named 'aiohttp'
+2025-08-07 08:53:04,858 - __main__ - INFO - Testing connection to fetch MCP server...
+2025-08-07 08:53:04,858 - __main__ - ERROR - ✗ fetch server error: No module named 'aiohttp'
+2025-08-07 08:53:04,858 - __main__ - INFO - Testing connection to tinybird MCP server...
+2025-08-07 08:53:04,859 - __main__ - ERROR - ✗ tinybird server error: No module named 'aiohttp'
+2025-08-07 08:53:04,859 - __main__ - INFO - Testing connection to piloty MCP server...
+2025-08-07 08:53:04,859 - __main__ - ERROR - ✗ piloty server error: No module named 'aiohttp'
+2025-08-07 08:53:04,859 - __main__ - INFO - 
+Testing batch connection...
+2025-08-07 08:53:04,859 - __main__ - ERROR - Test failed with error: No module named 'aiohttp'
+2025-08-07 08:53:34,268 - __main__ - INFO - Starting arXiv Scraper MCP Integration Tests
+2025-08-07 08:53:34,268 - __main__ - INFO - ================================================================================
+2025-08-07 08:53:34,268 - __main__ - INFO - Starting MCP server connection tests...
+2025-08-07 08:53:34,268 - __main__ - INFO - Testing connection to arxiv MCP server...
+2025-08-07 08:53:34,467 - __main__ - ERROR - ✗ arxiv server connection failed
+2025-08-07 08:53:34,467 - __main__ - INFO - Testing connection to playwright MCP server...
+2025-08-07 08:53:34,468 - __main__ - ERROR - ✗ playwright server connection failed
+2025-08-07 08:53:34,468 - __main__ - INFO - Testing connection to unstructured MCP server...
+2025-08-07 08:53:34,469 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc6997c0>
+2025-08-07 08:53:34,469 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc90f740>
+2025-08-07 08:53:34,470 - __main__ - ERROR - ✗ unstructured server connection failed
+2025-08-07 08:53:34,470 - __main__ - INFO - Testing connection to fetch MCP server...
+2025-08-07 08:53:34,470 - __main__ - ERROR - ✗ fetch server connection failed
+2025-08-07 08:53:34,470 - __main__ - INFO - Testing connection to tinybird MCP server...
+2025-08-07 08:53:34,471 - __main__ - ERROR - ✗ tinybird server connection failed
+2025-08-07 08:53:34,471 - __main__ - INFO - Testing connection to piloty MCP server...
+2025-08-07 08:53:34,472 - __main__ - ERROR - ✗ piloty server connection failed
+2025-08-07 08:53:34,472 - __main__ - INFO - 
+Testing batch connection...
+2025-08-07 08:53:34,474 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc34a600>
+2025-08-07 08:53:34,474 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1be240>
+2025-08-07 08:53:34,474 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1beba0>
+2025-08-07 08:53:34,474 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1bef90>
+2025-08-07 08:53:34,474 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1bf650>
+2025-08-07 08:53:34,474 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1be4e0>
+2025-08-07 08:53:34,476 - mcp.manager - INFO - Connected to 0/6 servers
+2025-08-07 08:53:34,476 - __main__ - INFO - 
+============================================================
+2025-08-07 08:53:34,476 - __main__ - INFO - MCP SERVER CONNECTION SUMMARY
+2025-08-07 08:53:34,476 - __main__ - INFO - ============================================================
+2025-08-07 08:53:34,476 - __main__ - INFO - ✗ arxiv        | Status: disconnected | Health: ✗ | Tools: 3
+2025-08-07 08:53:34,476 - __main__ - INFO - ✗ playwright   | Status: disconnected | Health: ✗ | Tools: 3
+2025-08-07 08:53:34,476 - __main__ - INFO - ✗ unstructured | Status: disconnected | Health: ✗ | Tools: 3
+2025-08-07 08:53:34,477 - __main__ - INFO - ✗ fetch        | Status: disconnected | Health: ✗ | Tools: 3
+2025-08-07 08:53:34,477 - __main__ - INFO - ✗ tinybird     | Status: disconnected | Health: ✗ | Tools: 3
+2025-08-07 08:53:34,477 - __main__ - INFO - ✗ piloty       | Status: disconnected | Health: ✗ | Tools: 3
+2025-08-07 08:53:34,477 - __main__ - INFO - ============================================================
+2025-08-07 08:53:34,477 - __main__ - INFO - Connected: 0/6 servers
+2025-08-07 08:53:34,477 - __main__ - WARNING - ⚠ No MCP servers are currently running or accessible
+2025-08-07 08:53:34,477 - __main__ - INFO - To start MCP servers, you need to:
+2025-08-07 08:53:34,477 - __main__ - INFO - 1. Clone the required repositories
+2025-08-07 08:53:34,477 - __main__ - INFO - 2. Install dependencies
+2025-08-07 08:53:34,477 - __main__ - INFO - 3. Start each server on the configured ports
+2025-08-07 08:53:34,478 - __main__ - INFO - See the configuration files in arxiv_scraper/mcp_servers/*/config.json
+2025-08-07 08:53:34,478 - __main__ - INFO - 
+Disconnecting from servers...
+2025-08-07 08:53:34,478 - __main__ - INFO - 
+============================================================
+2025-08-07 08:53:34,478 - __main__ - INFO - TESTING ENHANCED AGENT INTEGRATION
+2025-08-07 08:53:34,478 - __main__ - INFO - ============================================================
+2025-08-07 08:53:34,484 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1ab620>
+2025-08-07 08:53:34,484 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1bf290>
+2025-08-07 08:53:34,484 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1bff80>
+2025-08-07 08:53:34,485 - arxiv_scraper.crawler.mcp_enhanced_crawler - INFO - Connected to 0/3 required MCP servers
+2025-08-07 08:53:34,485 - __main__ - WARNING - ⚠ Enhanced Crawler Agent initialization failed
+2025-08-07 08:53:34,485 - arxiv_scraper.crawler.mcp_enhanced_crawler - INFO - Shutting down Enhanced Crawler Agent
+2025-08-07 08:53:34,493 - arxiv_scraper.scraper.mcp_enhanced_scraper - INFO - Connected to 0/2 scraper MCP servers
+2025-08-07 08:53:34,493 - __main__ - WARNING - ⚠ Enhanced Scraper Agent initialization failed
+2025-08-07 08:53:34,493 - arxiv_scraper.scraper.mcp_enhanced_scraper - INFO - Shutting down Enhanced Scraper Agent
+2025-08-07 08:53:34,497 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc761070>
+2025-08-07 08:53:34,497 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1bf320>
+2025-08-07 08:53:34,498 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1bd370>
+2025-08-07 08:53:34,502 - arxiv_scraper.downloader_agent - WARNING - Fetch MCP server not available, using fallback downloader
+2025-08-07 08:53:34,502 - __main__ - WARNING - ⚠ Enhanced Downloader Agent initialization failed
+2025-08-07 08:53:34,503 - arxiv_scraper.downloader_agent - INFO - Shutting down Enhanced Downloader Agent
+2025-08-07 08:53:34,503 - __main__ - INFO - 
+================================================================================
+2025-08-07 08:53:34,503 - __main__ - INFO - TEST SUMMARY
+2025-08-07 08:53:34,503 - __main__ - INFO - ================================================================================
+2025-08-07 08:53:34,503 - __main__ - INFO - Status: MCP servers not running - system will use fallback methods
+2025-08-07 08:53:34,503 - __main__ - INFO - Action: Install and start MCP servers for full functionality
+2025-08-07 08:53:34,503 - __main__ - INFO - Test completed successfully!
+2025-08-07 08:53:34,513 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc211340>
+2025-08-07 08:53:34,513 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1bfb60>
+2025-08-07 08:53:34,513 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1be540>
+2025-08-07 08:53:34,513 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78ccfc1be8a0>

@@ -1,0 +1,17 @@
+{
+  "name": "playwright-mcp-server",
+  "repository": "https://github.com/modelcontextprotocol/servers",
+  "path": "src/playwright/",
+  "port": 3002,
+  "tools": [
+    "screenshot",
+    "navigate",
+    "extract_content"
+  ],
+  "configuration": {
+    "headless": true,
+    "timeout": 30000,
+    "proxy_rotation": true,
+    "browser": "chromium"
+  }
+}

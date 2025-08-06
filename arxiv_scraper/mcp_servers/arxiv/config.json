@@ -1,0 +1,16 @@
+{
+  "name": "arxiv-mcp-server",
+  "repository": "https://github.com/blazickjp/arxiv-mcp-server",
+  "port": 3001,
+  "storage_path": "./papers/",
+  "tools": [
+    "search_papers",
+    "get_paper", 
+    "get_latex_source"
+  ],
+  "configuration": {
+    "max_results": 100,
+    "default_category": "cs.AI",
+    "rate_limit_seconds": 3
+  }
+}

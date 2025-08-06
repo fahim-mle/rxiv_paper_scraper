@@ -1,0 +1,16 @@
+{
+  "name": "unstructured-mcp-server", 
+  "repository": "https://github.com/unstructured-io/unstructured",
+  "port": 3003,
+  "tools": [
+    "extract_pdf",
+    "extract_html",
+    "preprocess_text"
+  ],
+  "configuration": {
+    "strategy": "auto",
+    "extract_images": false,
+    "chunk_elements": true,
+    "include_metadata": true
+  }
+}

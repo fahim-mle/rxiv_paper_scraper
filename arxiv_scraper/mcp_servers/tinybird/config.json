@@ -1,0 +1,15 @@
+{
+  "name": "tinybird-mcp-server",
+  "repository": "https://github.com/tinybirdco/mcp-server",
+  "port": 3005,
+  "tools": [
+    "query_data",
+    "insert_data", 
+    "analyze_performance"
+  ],
+  "configuration": {
+    "clickhouse_integration": true,
+    "mongodb_compatible": true,
+    "analytics_enabled": true
+  }
+}
