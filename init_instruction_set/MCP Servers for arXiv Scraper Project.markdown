@@ -99,17 +99,17 @@
 For each MCP server, clone and install:
 
 1. arXiv MCP Server:
-   - Clone: https://github.com/blazickjp/arxiv-mcp-server
+   - Clone: <https://github.com/blazickjp/arxiv-mcp-server>
    - Install in: ./mcp_servers/arxiv/
    - Configure storage path: ./papers/
 
 2. Playwright MCP Server:
-   - Clone: https://github.com/modelcontextprotocol/servers
+   - Clone: <https://github.com/modelcontextprotocol/servers>
    - Use: src/playwright/
    - Install Node.js dependencies
 
 3. Unstructured MCP Server:
-   - Clone: https://github.com/unstructured-io/unstructured
+   - Clone: <https://github.com/unstructured-io/unstructured>
    - Install Python package
    - Configure for PDF processing
 
@@ -118,11 +118,11 @@ For each MCP server, clone and install:
    - Configure for web content fetching
 
 5. Tinybird MCP Server:
-   - Clone: https://github.com/tinybirdco/mcp-server
+   - Clone: <https://github.com/tinybirdco/mcp-server>
    - Configure ClickHouse integration
 
 6. PiloTY MCP Server:
-   - Clone: https://github.com/pilotymcp/piloty
+   - Clone: <https://github.com/pilotymcp/piloty>
    - Configure for process management
 
 Modify specialized agents in /mnt/projects/workspace/rxiv_paper_scraper/.claude/agents:

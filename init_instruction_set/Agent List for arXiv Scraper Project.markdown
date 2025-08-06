@@ -1,6 +1,7 @@
 # Agent List for arXiv Scraper Project
 
 ## Main Agent (Orchestrator)
+
 - **Specialty**: Project planning, task delegation, resource management.
 - **Tasks**:
   - Interpret user prompts and break them into subtasks.
@@ -10,6 +11,7 @@
   - Example: Assign MongoDB setup to Database Agent, code optimization to Code Optimization Agent.
 
 ## Database Agent
+
 - **Specialty**: MongoDB setup, configuration, and integration; basic Linux (Ubuntu) skills.
 - **Tasks**:
   - Install MongoDB on Ubuntu: `sudo apt install mongodb`, configure server.
@@ -20,6 +22,7 @@
   - Example: Handle Step 3 (Design Database Schema), Step 5 (Store metadata in MongoDB).
 
 ## Crawler Agent
+
 - **Specialty**: Web crawling, API interaction, async programming.
 - **Tasks**:
   - Build crawler using arXiv API with `aiohttp` for async queries.
@@ -29,6 +32,7 @@
   - Example: Handle Step 4 (Build Crawler).
 
 ## Scraper Agent
+
 - **Specialty**: Data extraction, HTML parsing, metadata processing.
 - **Tasks**:
   - Parse metadata (title, authors, abstract, PDF URL) from API or HTML using `BeautifulSoup`.
@@ -38,6 +42,7 @@
   - Example: Handle Step 5 (Build Scraper).
 
 ## Downloader Agent
+
 - **Specialty**: Async file downloads, file system management.
 - **Tasks**:
   - Download PDFs using `aiohttp` to `./papers/<category>/<paper_id>.pdf`.
@@ -47,6 +52,7 @@
   - Example: Handle Step 6 (Implement PDF Downloader).
 
 ## Code Optimization Agent
+
 - **Specialty**: Python optimization, parallel processing, performance tuning.
 - **Tasks**:
   - Optimize crawler/scraper code with `asyncio` and `concurrent.futures`.
@@ -56,6 +62,7 @@
   - Example: Handle Step 7 (Optimize with Parallel Processing).
 
 ## Multi-Source Agent
+
 - **Specialty**: Adapting scraper for diverse data sources, schema flexibility.
 - **Tasks**:
   - Extend scraper for free books (e.g., Project Gutenberg) and articles (e.g., open-access journals).
@@ -64,6 +71,7 @@
   - Example: Handle Step 8 (Add Multi-Source Support).
 
 ## Testing Agent
+
 - **Specialty**: Testing, validation, error handling.
 - **Tasks**:
   - Test scraper on small datasets (100 papers, 10 books/articles).
@@ -73,6 +81,7 @@
   - Example: Handle Step 9 (Test and Validate).
 
 ## Deployment Agent
+
 - **Specialty**: Deployment, scheduling, containerization.
 - **Tasks**:
   - Create Docker container for scraper portability.
@@ -82,6 +91,7 @@
   - Example: Handle Step 10 (Deploy and Schedule).
 
 ## NLP Agent
+
 - **Specialty**: NLP/ML data preparation, integration with ML libraries.
 - **Tasks**:
   - Export MongoDB data to JSON for NLP/ML tasks.

@@ -5,4 +5,4 @@ Provides integration with external MCP servers for enhanced functionality.
 
 from .client_manager import MCPClientManager
 
-__all__ = ['MCPClientManager']
+__all__ = ["MCPClientManager"]
