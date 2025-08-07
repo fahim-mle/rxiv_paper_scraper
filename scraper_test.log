@@ -1,0 +1,86 @@
+2025-08-07 19:01:08,834 - __main__ - INFO - Testing database connection...
+2025-08-07 19:01:08,841 - arxiv_scraper.database.mongodb_connector - INFO - Successfully connected to MongoDB: localhost:27017
+2025-08-07 19:01:08,841 - arxiv_scraper.database.mongodb_connector - INFO - Database: arxiv_scraper
+2025-08-07 19:01:08,893 - arxiv_scraper.database.mongodb_operations - INFO - Created indexes for papers collection
+2025-08-07 19:01:08,946 - arxiv_scraper.database.mongodb_operations - INFO - Created indexes for books collection
+2025-08-07 19:01:09,023 - arxiv_scraper.database.mongodb_operations - INFO - Created indexes for articles collection
+2025-08-07 19:01:09,038 - arxiv_scraper.database.mongodb_operations - INFO - Database initialization completed successfully
+2025-08-07 19:01:17,075 - __main__ - INFO - ============================================================
+2025-08-07 19:01:17,075 - __main__ - INFO - Starting Complete arXiv AI/ML Paper Scraper Test
+2025-08-07 19:01:17,075 - __main__ - INFO - ============================================================
+2025-08-07 19:01:17,075 - __main__ - INFO - Step 1: Initializing components...
+2025-08-07 19:01:17,082 - arxiv_scraper.database.mongodb_connector - INFO - Successfully connected to MongoDB: localhost:27017
+2025-08-07 19:01:17,082 - arxiv_scraper.database.mongodb_connector - INFO - Database: arxiv_scraper
+2025-08-07 19:01:17,083 - arxiv_scraper.database.mongodb_operations - INFO - Created indexes for papers collection
+2025-08-07 19:01:17,084 - arxiv_scraper.database.mongodb_operations - INFO - Created indexes for books collection
+2025-08-07 19:01:17,084 - arxiv_scraper.database.mongodb_operations - INFO - Created indexes for articles collection
+2025-08-07 19:01:17,085 - arxiv_scraper.database.mongodb_operations - INFO - Database initialization completed successfully
+2025-08-07 19:01:17,085 - __main__ - INFO - ✓ Components initialized successfully
+2025-08-07 19:01:17,085 - __main__ - INFO - Step 2: Crawling 20 AI/ML papers from arXiv...
+2025-08-07 19:01:17,085 - ArxivCrawler - INFO - Starting AI/ML paper crawl: max 20 papers, 7 days back
+2025-08-07 19:01:17,086 - arxiv_scraper.crawler.arxiv_api - INFO - Fetching papers from arXiv API: 10 categories, max 20 results
+2025-08-07 19:01:18,364 - arxiv_scraper.crawler.arxiv_api - INFO - Parsing 0 papers from arXiv response
+2025-08-07 19:01:18,364 - ArxivCrawler - INFO - Crawled 0 AI/ML papers from arXiv
+2025-08-07 19:01:18,365 - __main__ - ERROR - No papers crawled from arXiv
+2025-08-07 19:02:00,911 - __main__ - INFO - Running quick crawler test...
+2025-08-07 19:02:00,911 - ArxivCrawler - INFO - Starting AI/ML paper crawl: max 5 papers, 3 days back
+2025-08-07 19:02:00,912 - arxiv_scraper.crawler.arxiv_api - INFO - Fetching papers from arXiv API: 10 categories, max 5 results
+2025-08-07 19:02:01,891 - arxiv_scraper.crawler.arxiv_api - INFO - Parsing 0 papers from arXiv response
+2025-08-07 19:02:01,891 - ArxivCrawler - INFO - Crawled 0 AI/ML papers from arXiv
+2025-08-07 19:03:17,658 - __main__ - INFO - Running quick crawler test...
+2025-08-07 19:03:17,658 - ArxivCrawler - INFO - Starting AI/ML paper crawl: max 5 papers, 3 days back
+2025-08-07 19:03:17,658 - arxiv_scraper.crawler.arxiv_api - INFO - Fetching papers from arXiv API: 10 categories, max 5 results
+2025-08-07 19:03:18,447 - arxiv_scraper.crawler.arxiv_api - INFO - Parsing 5 papers from arXiv response
+2025-08-07 19:03:18,450 - ArxivCrawler - INFO - Crawled 5 AI/ML papers from arXiv
+2025-08-07 19:03:24,420 - __main__ - INFO - ============================================================
+2025-08-07 19:03:24,420 - __main__ - INFO - Starting Complete arXiv AI/ML Paper Scraper Test
+2025-08-07 19:03:24,420 - __main__ - INFO - ============================================================
+2025-08-07 19:03:24,420 - __main__ - INFO - Step 1: Initializing components...
+2025-08-07 19:03:24,426 - arxiv_scraper.database.mongodb_connector - INFO - Successfully connected to MongoDB: localhost:27017
+2025-08-07 19:03:24,426 - arxiv_scraper.database.mongodb_connector - INFO - Database: arxiv_scraper
+2025-08-07 19:03:24,426 - arxiv_scraper.database.mongodb_operations - INFO - Created indexes for papers collection
+2025-08-07 19:03:24,427 - arxiv_scraper.database.mongodb_operations - INFO - Created indexes for books collection
+2025-08-07 19:03:24,427 - arxiv_scraper.database.mongodb_operations - INFO - Created indexes for articles collection
+2025-08-07 19:03:24,428 - arxiv_scraper.database.mongodb_operations - INFO - Database initialization completed successfully
+2025-08-07 19:03:24,428 - __main__ - INFO - ✓ Components initialized successfully
+2025-08-07 19:03:24,428 - __main__ - INFO - Step 2: Crawling 20 AI/ML papers from arXiv...
+2025-08-07 19:03:24,428 - ArxivCrawler - INFO - Starting AI/ML paper crawl: max 20 papers, 90 days back
+2025-08-07 19:03:24,428 - arxiv_scraper.crawler.arxiv_api - INFO - Fetching papers from arXiv API: 10 categories, max 20 results
+2025-08-07 19:03:25,045 - arxiv_scraper.crawler.arxiv_api - INFO - Parsing 20 papers from arXiv response
+2025-08-07 19:03:25,047 - ArxivCrawler - INFO - Crawled 20 AI/ML papers from arXiv
+2025-08-07 19:03:25,047 - __main__ - INFO - ✓ Successfully crawled 20 papers
+2025-08-07 19:03:25,048 - __main__ - INFO - Step 3: Processing and validating metadata...
+2025-08-07 19:03:25,051 - PaperMetadataProcessor - INFO - Processed 20/20 papers successfully
+2025-08-07 19:03:25,051 - __main__ - INFO - ✓ Successfully processed 20 papers
+2025-08-07 19:03:25,051 - __main__ - INFO - Step 4: Storing metadata in MongoDB...
+2025-08-07 19:03:25,063 - arxiv_scraper.database.mongodb_operations - INFO - Bulk inserted 20 papers
+2025-08-07 19:03:25,063 - __main__ - INFO - ✓ Stored 20 papers in database
+2025-08-07 19:03:25,063 - __main__ - INFO - Step 5: Downloading PDF files...
+2025-08-07 19:03:25,063 - __main__ - INFO - Storage status: 0.00GB used, 300.00GB available
+2025-08-07 19:03:25,063 - PDFDownloader - INFO - Starting batch download of 20 papers (max 2 concurrent)
+2025-08-07 19:03:28,149 - PDFDownloader - INFO - Successfully downloaded 2508.04702v1 (1429836 bytes)
+2025-08-07 19:03:34,522 - PDFDownloader - INFO - Successfully downloaded 2508.04700v1 (4569302 bytes)
+2025-08-07 19:03:42,258 - PDFDownloader - INFO - Successfully downloaded 2508.04699v1 (4923429 bytes)
+2025-08-07 19:03:45,579 - PDFDownloader - INFO - Successfully downloaded 2508.04698v1 (1760779 bytes)
+2025-08-07 19:03:55,863 - PDFDownloader - INFO - Successfully downloaded 2508.04705v1 (10494716 bytes)
+2025-08-07 19:03:58,526 - PDFDownloader - INFO - Successfully downloaded 2508.04691v1 (289303 bytes)
+2025-08-07 19:03:58,853 - PDFDownloader - INFO - Successfully downloaded 2508.04696v1 (4483412 bytes)
+2025-08-07 19:04:02,857 - PDFDownloader - INFO - Successfully downloaded 2508.04683v1 (891697 bytes)
+2025-08-07 19:04:36,370 - PDFDownloader - INFO - Successfully downloaded 2508.04682v1 (11555179 bytes)
+2025-08-07 19:04:57,376 - PDFDownloader - INFO - Successfully downloaded 2508.04687v1 (16180503 bytes)
+2025-08-07 19:05:03,466 - PDFDownloader - INFO - Successfully downloaded 2508.04679v1 (1505069 bytes)
+2025-08-07 19:05:04,319 - PDFDownloader - INFO - Successfully downloaded 2508.04681v1 (17632287 bytes)
+2025-08-07 19:05:07,454 - PDFDownloader - INFO - Successfully downloaded 2508.04677v1 (602652 bytes)
+2025-08-07 19:05:30,405 - PDFDownloader - INFO - Successfully downloaded 2508.04678v1 (4874260 bytes)
+2025-08-07 19:05:32,176 - PDFDownloader - INFO - Successfully downloaded 2508.04670v1 (877424 bytes)
+2025-08-07 19:05:38,912 - PDFDownloader - INFO - Successfully downloaded 2508.04667v1 (600092 bytes)
+2025-08-07 19:05:46,118 - PDFDownloader - INFO - Successfully downloaded 2508.04665v1 (1765289 bytes)
+2025-08-07 19:05:48,426 - PDFDownloader - INFO - Successfully downloaded 2508.04664v1 (446268 bytes)
+2025-08-07 19:05:54,885 - PDFDownloader - INFO - Successfully downloaded 2508.04676v1 (15317836 bytes)
+2025-08-07 19:07:52,650 - PDFDownloader - INFO - Successfully downloaded 2508.04663v1 (49067278 bytes)
+2025-08-07 19:07:52,651 - PDFDownloader - INFO - Batch download completed: {'attempted': 20, 'successful': 20, 'failed': 0, 'skipped_storage': 0, 'bytes_downloaded': 149266611}
+2025-08-07 19:07:52,651 - __main__ - INFO - ✓ Download completed: {'attempted': 20, 'successful': 20, 'failed': 0, 'skipped_storage': 0, 'bytes_downloaded': 149266611, 'success_rate': 100.0, 'total_size_mb': 142.35}
+2025-08-07 19:07:52,651 - __main__ - INFO - Step 6: Updating database with download status...
+2025-08-07 19:07:52,664 - __main__ - INFO - ✓ Updated download status for 20 papers
+2025-08-07 19:07:52,664 - __main__ - INFO - Step 7: Generating final report...
+2025-08-07 19:07:52,670 - __main__ - INFO - ✓ Test completed successfully!
