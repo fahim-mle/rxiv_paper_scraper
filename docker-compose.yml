@@ -1,0 +1,128 @@
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:7.0
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME:-admin}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD:-password123}
+      MONGO_INITDB_DATABASE: ${MONGO_DB_NAME:-arxiv_scraper}
+    volumes:
+      - mongodb_data:/data/db
+      - ./mongodb.conf:/etc/mongod.conf:ro
+    ports:
+      - "27017:27017"
+    command: mongod --config /etc/mongod.conf
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+
+  # arXiv Scraper Main Application
+  arxiv-scraper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    restart: unless-stopped
+    environment:
+      - MONGO_URI=mongodb://admin:password123@mongodb:27017/arxiv_scraper?authSource=admin
+      - STORAGE_LIMIT_GB=300
+      - LOG_LEVEL=INFO
+    volumes:
+      - papers_data:/app/papers
+      - scraper_logs:/app/logs
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # MCP Servers Container
+  mcp-servers:
+    build:
+      context: .
+      dockerfile: Dockerfile.mcp
+      target: production
+    restart: unless-stopped
+    environment:
+      - ARXIV_STORAGE_PATH=/app/papers
+      - LOG_LEVEL=INFO
+    volumes:
+      - papers_data:/app/papers
+      - mcp_logs:/app/logs
+    ports:
+      - "3001:3001"  # arXiv MCP server
+      - "3004:3004"  # Fetch MCP server
+    healthcheck:
+      test: ["CMD", "python", "-c", "import subprocess; subprocess.run(['python', 'test_mcp_connections.py'], check=True)"]
+      interval: 60s
+      timeout: 30s
+      retries: 3
+      start_period: 60s
+
+  # Redis for caching and job queues (optional)
+  redis:
+    image: redis:7.2-alpine
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+  # Nginx reverse proxy (production)
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - nginx_logs:/var/log/nginx
+    depends_on:
+      - arxiv-scraper
+      - mcp-servers
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  mongodb_data:
+    driver: local
+  papers_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./papers
+  scraper_logs:
+    driver: local
+  mcp_logs:
+    driver: local
+  redis_data:
+    driver: local
+  nginx_logs:
+    driver: local
+
+networks:
+  default:
+    name: arxiv-scraper-network

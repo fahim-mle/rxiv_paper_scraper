@@ -1,0 +1,102 @@
+{
+  "status": "success",
+  "total_papers": 20,
+  "categories_distribution": {
+    "cs.CV": 10,
+    "cs.AI": 9,
+    "cs.CL": 7,
+    "cs.LG": 6,
+    "cs.MA": 2,
+    "cs.MM": 1,
+    "cs.RO": 1,
+    "cs.GR": 1,
+    "I.3.2; I.4.10": 1,
+    "cs.IR": 1,
+    "math.OC": 1,
+    "cs.HC": 1,
+    "cs.SD": 1,
+    "eess.AS": 1,
+    "I.4": 1
+  },
+  "average_authors_per_paper": 6.2,
+  "average_abstract_length": 1166,
+  "crawl_timestamp": "2025-08-07T09:29:40.535069+00:00",
+  "target_categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CV",
+    "cs.CL",
+    "cs.NE",
+    "stat.ML"
+  ],
+  "sample_papers": [
+    {
+      "title": "Occupancy Learning with Spatiotemporal Memory",
+      "authors": [
+        "Ziyang Leng",
+        "Jiawei Yang",
+        "Wenlong Yi"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "paper_id": "2508.04705v1"
+    },
+    {
+      "title": "BEVCon: Advancing Bird's Eye View Perception with Contrastive Learning",
+      "authors": [
+        "Ziyang Leng",
+        "Jiawei Yang",
+        "Zhicheng Ren"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "paper_id": "2508.04702v1"
+    },
+    {
+      "title": "SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience",
+      "authors": [
+        "Zeyi Sun",
+        "Ziyu Liu",
+        "Yuhang Zang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.LG",
+        "cs.MA",
+        "cs.MM"
+      ],
+      "paper_id": "2508.04700v1"
+    },
+    {
+      "title": "Hop, Skip, and Overthink: Diagnosing Why Reasoning Models Fumble during Multi-Hop Analysis",
+      "authors": [
+        "Anushka Yadav",
+        "Isha Nalawade",
+        "Srujana Pillarichety"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "paper_id": "2508.04699v1"
+    },
+    {
+      "title": "FaST: Feature-aware Sampling and Tuning for Personalized Preference Alignment with Limited Data",
+      "authors": [
+        "Thibaut Thonet",
+        "Germ\u00e1n Kruszewski",
+        "Jos Rozen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "paper_id": "2508.04698v1"
+    }
+  ],
+  "database_storage": true,
+  "database_initialized": true
+}
